@@ -64,11 +64,50 @@ The dataset contains 30 sample junior data job postings with these fields:
 ## Key Insights
 
 - The dataset contains 30 junior data job postings.
-- SQL is the most requested skill in the sample dataset.
-- Python appears across data analyst, data engineering, analytics engineering and data science roles.
-- Hybrid roles are common in the sample, but remote roles are also well represented.
-- Data engineering and analytics engineering roles have higher average salaries than most analyst roles in this sample.
-- dbt appears mainly in analytics engineering/data engineering roles, while Power BI and Excel appear mainly in analyst roles.
+- **Data Analyst** is the most common role category in the sample, with 14 postings.
+- **SQL** appears in every posting, making it the strongest core skill in this dataset.
+- **Python** appears in 22 postings and is useful across analyst, engineering and data science roles.
+- **Hybrid** is the most common work pattern, followed by remote roles.
+- The average listed salary across the sample is approximately **£32,333**.
+- Data engineering, analytics engineering and data science roles show higher average salaries than data analyst roles in this sample.
+- **dbt** appears mainly in analytics engineering and data engineering roles, while **Excel** and **Power BI** appear more often in analyst-focused roles.
+
+## Descriptive Statistics
+
+This project uses descriptive analysis rather than formal statistical testing. Because the dataset is small and synthetic, statistical tests would not provide reliable evidence about the wider job market. Instead, the focus is on clear summaries that are appropriate for an exploratory dashboard.
+
+Main descriptive metrics used:
+
+- counts of postings by role category, location and work type
+- skill frequency counts
+- average, minimum and maximum salary by role category
+- cross-tab style comparison of skills by role category
+
+A simple next step, if using a larger real dataset, would be to compare salary distributions across role categories or test whether remote/hybrid roles are associated with different average salaries.
+
+## Output Tables
+
+The analysis script creates summary tables in `outputs/tables/`. These tables support the charts and make the analysis easier to inspect.
+
+### `role_summary.csv`
+
+This table summarises job count and salary by role category. It shows that Data Analyst roles are the most common in the sample, while Data Scientist and Analytics Engineer roles have higher average salaries.
+
+### `skill_counts.csv`
+
+This table counts how often each skill appears across job postings. SQL appears in all 30 postings, followed by Python, Excel and Power BI. This suggests SQL and Python are the most useful skills to prioritise across junior data roles.
+
+### `role_skill_counts.csv`
+
+This table breaks skill demand down by role category. It helps show how skill expectations differ: dbt is more associated with analytics engineering, AWS and ETL appear more in data engineering, while Excel and Power BI are more common in analyst roles.
+
+### `work_type_summary.csv`
+
+This table counts remote, hybrid and on-site roles. Hybrid is the most common work pattern in the sample, but remote roles are also well represented.
+
+### `location_summary.csv`
+
+This table counts postings by location. UK-wide, Manchester and London appear most often in this sample.
 
 ## Charts
 
@@ -101,6 +140,7 @@ The analysis script also creates summary CSV tables:
 - `outputs/tables/role_summary.csv`
 - `outputs/tables/work_type_summary.csv`
 - `outputs/tables/location_summary.csv`
+- `outputs/descriptive_statistics.md`
 
 ## How to Run Locally
 

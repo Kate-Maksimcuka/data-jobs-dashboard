@@ -138,6 +138,9 @@ def write_insights(df: pd.DataFrame, skill_counts: pd.DataFrame) -> None:
     top_role = df["role_category"].value_counts().idxmax()
     top_work_type = df["work_type"].value_counts().idxmax()
     average_salary = round(df["salary_gbp"].mean())
+    median_salary = round(df["salary_gbp"].median())
+    minimum_salary = round(df["salary_gbp"].min())
+    maximum_salary = round(df["salary_gbp"].max())
 
     insights = f"""# Key Insights
 
@@ -149,6 +152,27 @@ def write_insights(df: pd.DataFrame, skill_counts: pd.DataFrame) -> None:
 - SQL and Python appear frequently across several role types, making them useful core skills for junior data roles.
 """
     (OUTPUT_DIR / "key_insights.md").write_text(insights)
+
+    statistics = f"""# Descriptive Statistics Summary
+
+This summary uses simple descriptive statistics because the dataset is small and synthetic.
+
+## Salary Summary
+
+- Average salary: £{average_salary:,}
+- Median salary: £{median_salary:,}
+- Minimum salary: £{minimum_salary:,}
+- Maximum salary: £{maximum_salary:,}
+
+## Dataset Size
+
+- Total postings: {len(df)}
+- Role categories: {df['role_category'].nunique()}
+- Locations: {df['location'].nunique()}
+- Work types: {df['work_type'].nunique()}
+- Unique skills: {skill_counts['skill'].nunique()}
+"""
+    (OUTPUT_DIR / "descriptive_statistics.md").write_text(statistics)
 
 
 def main() -> None:
