@@ -1,6 +1,6 @@
-# Data Jobs Dashboard
+# Data Jobs Analysis Dashboard
 
-A beginner-friendly data analysis and visualisation project exploring junior data job postings.
+A beginner-friendly data analysis, visualisation and descriptive statistics project exploring junior data job postings.
 
 The project analyses a small sample dataset of junior data roles and creates dashboard-style charts showing role types, requested skills, work patterns and salary differences.
 
