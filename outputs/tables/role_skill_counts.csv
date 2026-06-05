@@ -1,0 +1,33 @@
+role_category,skill,job_count
+Analytics Engineer,Python,3
+Analytics Engineer,SQL,3
+Analytics Engineer,dbt,3
+Analytics Engineer,AWS,1
+Analytics Engineer,BigQuery,1
+Analytics Engineer,Looker,1
+Data Analyst,SQL,14
+Data Analyst,Excel,13
+Data Analyst,Power BI,8
+Data Analyst,Python,6
+Data Analyst,Tableau,4
+Data Analyst,DAX,2
+Data Analyst,A/B Testing,1
+Data Analyst,Data Cleaning,1
+Data Analyst,Statistics,1
+Data Engineer,Python,8
+Data Engineer,SQL,8
+Data Engineer,AWS,4
+Data Engineer,ETL,4
+Data Engineer,Airflow,2
+Data Engineer,PostgreSQL,2
+Data Engineer,Azure,1
+Data Engineer,Docker,1
+Data Engineer,S3,1
+Data Engineer,dbt,1
+Data Scientist,Python,5
+Data Scientist,SQL,5
+Data Scientist,Machine Learning,3
+Data Scientist,Pandas,3
+Data Scientist,Statistics,2
+Data Scientist,Docker,1
+Data Scientist,scikit-learn,1

@@ -1,0 +1,31 @@
+job_id,job_title,company,location,work_type,role_category,salary_gbp,skills,posting_date
+1,Junior Data Analyst,RetailCo,Manchester,Hybrid,Data Analyst,28000,SQL;Excel;Power BI;Python,2026-05-01
+2,Graduate Data Analyst,HealthPlus,London,Hybrid,Data Analyst,30000,SQL;Excel;Tableau,2026-05-02
+3,Junior BI Analyst,FinanceFirst,Leeds,On-site,Data Analyst,29000,SQL;Power BI;Excel,2026-05-03
+4,Data Analyst Intern,GreenEnergy,UK-wide,Remote,Data Analyst,26000,Excel;SQL;Python,2026-05-04
+5,Junior Data Engineer,CloudWorks,Manchester,Hybrid,Data Engineer,34000,Python;SQL;AWS;ETL,2026-05-05
+6,Associate Data Engineer,DataBridge,London,Hybrid,Data Engineer,36000,Python;SQL;dbt;Airflow,2026-05-06
+7,Graduate Data Engineer,ShopOnline,UK-wide,Remote,Data Engineer,33000,SQL;Python;AWS;S3,2026-05-07
+8,Junior Analytics Engineer,SaaSly,London,Remote,Analytics Engineer,35000,SQL;dbt;Python;Looker,2026-05-08
+9,Junior Data Scientist,InsureAI,London,Hybrid,Data Scientist,37000,Python;SQL;Machine Learning;scikit-learn,2026-05-09
+10,Graduate Data Scientist,MedTech Analytics,Manchester,Hybrid,Data Scientist,35000,Python;Machine Learning;Pandas;SQL,2026-05-10
+11,Junior Reporting Analyst,Local Council,Birmingham,On-site,Data Analyst,27000,Excel;SQL;Power BI,2026-05-11
+12,Data Analyst,TravelNow,UK-wide,Remote,Data Analyst,32000,SQL;Python;Tableau;Excel,2026-05-12
+13,Junior Data Engineer,LogisticsPro,Birmingham,Hybrid,Data Engineer,33500,Python;SQL;ETL;PostgreSQL,2026-05-13
+14,Graduate BI Developer,RetailCo,Manchester,Hybrid,Data Analyst,30000,SQL;Power BI;DAX;Excel,2026-05-14
+15,Junior Product Analyst,AppBox,UK-wide,Remote,Data Analyst,31000,SQL;Python;A/B Testing;Tableau,2026-05-15
+16,Junior Analytics Engineer,MarketFlow,UK-wide,Remote,Analytics Engineer,36000,SQL;dbt;BigQuery;Python,2026-05-16
+17,Trainee Data Engineer,BankNorth,Leeds,On-site,Data Engineer,32000,SQL;Python;Azure;ETL,2026-05-17
+18,Junior Data Scientist,FoodTech,Bristol,Hybrid,Data Scientist,34500,Python;Pandas;SQL;Statistics,2026-05-18
+19,Junior Data Analyst,University Services,Manchester,Hybrid,Data Analyst,28500,Excel;SQL;Python;Power BI,2026-05-19
+20,Graduate Insight Analyst,MediaGroup,London,Hybrid,Data Analyst,31000,SQL;Excel;Tableau;Statistics,2026-05-20
+21,Junior Data Engineer,AdTechLab,UK-wide,Remote,Data Engineer,37000,Python;SQL;AWS;Docker,2026-05-21
+22,Data Operations Analyst,HealthPlus,Leeds,On-site,Data Analyst,29500,SQL;Excel;Data Cleaning,2026-05-22
+23,Junior ML Engineer,VisionAI,London,Hybrid,Data Scientist,39000,Python;Machine Learning;SQL;Docker,2026-05-23
+24,Junior Data Analyst,EcommerceHub,UK-wide,Remote,Data Analyst,30500,SQL;Python;Power BI;Excel,2026-05-24
+25,Associate Analytics Engineer,CloudWorks,Manchester,Hybrid,Analytics Engineer,35500,SQL;dbt;AWS;Python,2026-05-25
+26,Graduate Data Analyst,CharityData,UK-wide,Remote,Data Analyst,27000,Excel;SQL;Power BI,2026-05-26
+27,Junior Data Engineer,FinOps Ltd,London,Hybrid,Data Engineer,36500,Python;SQL;Airflow;AWS,2026-05-27
+28,Junior BI Analyst,NorthRetail,Leeds,Hybrid,Data Analyst,28500,SQL;Power BI;Excel;DAX,2026-05-28
+29,Junior Data Scientist,PeopleAnalytics,UK-wide,Remote,Data Scientist,35500,Python;Statistics;SQL;Pandas,2026-05-29
+30,Graduate Data Engineer,PublicData UK,Manchester,Hybrid,Data Engineer,32500,SQL;Python;PostgreSQL;ETL,2026-05-30
