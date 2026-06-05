@@ -1,5 +1,5 @@
-role_category,job_count,average_salary_gbp,minimum_salary_gbp,maximum_salary_gbp
-Analytics Engineer,3,35500.0,35000,36000
-Data Analyst,14,29143.0,26000,32000
-Data Engineer,8,34312.0,32000,37000
-Data Scientist,5,36200.0,34500,39000
+role_category,job_count,average_salary_gbp,median_salary_gbp,salary_std_gbp,minimum_salary_gbp,maximum_salary_gbp
+Analytics Engineer,3,35500.0,35500.0,500.0,35000,36000
+Data Analyst,14,29143.0,29250.0,1748.0,26000,32000
+Data Engineer,8,34312.0,33750.0,1926.0,32000,37000
+Data Scientist,5,36200.0,35500.0,1823.0,34500,39000

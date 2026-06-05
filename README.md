@@ -80,7 +80,7 @@ Main descriptive metrics used:
 
 - counts of postings by role category, location and work type
 - skill frequency counts
-- average, minimum and maximum salary by role category
+- average, median, standard deviation, minimum and maximum salary by role category
 - cross-tab style comparison of skills by role category
 
 A simple next step, if using a larger real dataset, would be to compare salary distributions across role categories or test whether remote/hybrid roles are associated with different average salaries.
@@ -91,7 +91,7 @@ The analysis script creates summary tables in `outputs/tables/`. These tables su
 
 ### `role_summary.csv`
 
-This table summarises job count and salary by role category. It shows that Data Analyst roles are the most common in the sample, while Data Scientist and Analytics Engineer roles have higher average salaries.
+This table summarises job count and salary by role category using basic descriptive statistics: mean, median, standard deviation, minimum and maximum. It shows that Data Analyst roles are the most common in the sample, while Data Scientist and Analytics Engineer roles have higher average salaries.
 
 ### `skill_counts.csv`
 
@@ -143,6 +143,14 @@ This chart compares average listed salary by role category. It gives a simple vi
 
 ![Average salary by role](outputs/charts/average_salary_by_role.png)
 
+### Salary Distribution by Role
+
+This boxplot-style chart shows the spread of salaries within each role category. It adds a basic statistical view by showing not only average salary differences, but also the variation within each group.
+
+**Main observation:** Data Analyst salaries are lower on average in this sample, while Data Scientist roles reach the highest maximum salary. Because the dataset is small and synthetic, this chart should be read as descriptive practice rather than evidence of real market salary differences.
+
+![Salary distribution by role](outputs/charts/salary_distribution_by_role.png)
+
 ### Top Skills by Role Category
 
 This heatmap-style chart shows how frequently the top skills appear within each role category. It is designed to show how skill expectations differ across junior data roles.
@@ -161,6 +169,7 @@ The analysis script also creates summary CSV tables:
 - `outputs/tables/work_type_summary.csv`
 - `outputs/tables/location_summary.csv`
 - `outputs/descriptive_statistics.md`
+- `outputs/charts/salary_distribution_by_role.png`
 
 ## How to Run Locally
 

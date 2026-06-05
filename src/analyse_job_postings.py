@@ -48,6 +48,8 @@ def export_tables(df: pd.DataFrame, skill_counts: pd.DataFrame, role_skill_count
         .agg(
             job_count=("job_id", "count"),
             average_salary_gbp=("salary_gbp", "mean"),
+            median_salary_gbp=("salary_gbp", "median"),
+            salary_std_gbp=("salary_gbp", "std"),
             minimum_salary_gbp=("salary_gbp", "min"),
             maximum_salary_gbp=("salary_gbp", "max"),
         )
@@ -107,6 +109,24 @@ def save_average_salary_chart(df: pd.DataFrame) -> None:
     plt.close()
 
 
+def save_salary_distribution_chart(df: pd.DataFrame) -> None:
+    role_order = sorted(df["role_category"].unique())
+    salary_groups = [
+        df[df["role_category"] == role]["salary_gbp"] for role in role_order
+    ]
+
+    plt.figure(figsize=(10, 6))
+    plt.boxplot(salary_groups, tick_labels=role_order)
+    plt.title("Salary Distribution by Role Category")
+    plt.xlabel("Role category")
+    plt.ylabel("Salary (£)")
+    plt.xticks(rotation=20, ha="right")
+    plt.grid(axis="y", alpha=0.3)
+    plt.tight_layout()
+    plt.savefig(CHART_DIR / "salary_distribution_by_role.png", dpi=160)
+    plt.close()
+
+
 def save_role_skill_heatmap(role_skill_counts: pd.DataFrame) -> None:
     top_skills = role_skill_counts.groupby("skill")["job_count"].sum().sort_values(ascending=False).head(8).index
     heatmap_df = role_skill_counts[role_skill_counts["skill"].isin(top_skills)]
@@ -163,6 +183,7 @@ This summary uses simple descriptive statistics because the dataset is small and
 - Median salary: £{median_salary:,}
 - Minimum salary: £{minimum_salary:,}
 - Maximum salary: £{maximum_salary:,}
+- Salary standard deviation: £{round(df["salary_gbp"].std()):,}
 
 ## Dataset Size
 
@@ -186,6 +207,7 @@ def main() -> None:
     save_role_breakdown_chart(df)
     save_work_type_chart(df)
     save_average_salary_chart(df)
+    save_salary_distribution_chart(df)
     save_role_skill_heatmap(role_skill_counts)
     write_insights(df, skill_counts)
     print(f"Saved charts to {CHART_DIR}")

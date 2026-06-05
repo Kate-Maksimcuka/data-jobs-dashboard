@@ -8,6 +8,7 @@ This summary uses simple descriptive statistics because the dataset is small and
 - Median salary: £32,250
 - Minimum salary: £26,000
 - Maximum salary: £39,000
+- Salary standard deviation: £3,514
 
 ## Dataset Size
 
